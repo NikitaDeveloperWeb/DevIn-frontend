@@ -26,6 +26,7 @@
     width: 40%;
     height: 100%;
     background: inherit;
+    box-shadow: 0 7px 15px var(--color-shadow), 0 5px 5px var(--color-shadow-second);
     &__buttons {
       display: flex;
       padding: 20px;
