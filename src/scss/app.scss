@@ -1,0 +1,10 @@
+//setting
+@import './base/normalize', './base/theme';
+//components
+@import './components/button', './components/button';
+//pages
+@import './pages/beginPage';
+.app {
+  width: 100%;
+  height: 100%;
+}
