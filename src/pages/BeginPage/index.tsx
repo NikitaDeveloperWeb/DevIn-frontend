@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Modal from '../../components/Modal';
 import LoginForm from './components/LoginForm';
 import RegisterForm from './components/RegisterForm';
@@ -7,7 +6,7 @@ import RegisterForm from './components/RegisterForm';
 //page title
 document.title = 'DevIn | Authorization';
 
-function BeginPage() {
+const BeginPage = () => {
   return (
     <div className="beginPage">
       <div className="beginPage__image">
@@ -31,5 +30,5 @@ function BeginPage() {
       </div>
     </div>
   );
-}
+};
 export default BeginPage;

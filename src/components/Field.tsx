@@ -5,7 +5,7 @@ interface FieldProps {
   name: string;
   id?: string;
   placeholder: string;
-  ref?: any;
+  fieldRef?: any;
   className: string;
   form?: string;
   accept?: string;
@@ -18,7 +18,7 @@ function Field({
   name,
   id,
   placeholder,
-  ref,
+  fieldRef,
   className,
   form,
   accept,
@@ -26,7 +26,7 @@ function Field({
   children,
 }: FieldProps) {
   const [focus, setFocus] = React.useState(false);
-  const fieldRef = React.useRef<HTMLDivElement>(null);
+  const fieldReferens = React.useRef<HTMLDivElement>(null);
 
   const handleFocusField = (state: boolean) => {
     setFocus(!state);
@@ -35,7 +35,7 @@ function Field({
   //outside click listener
   const handleOutsideClick = (event: any) => {
     const path = event.path || (event.composedPath && event.composedPath());
-    if (!path.includes(fieldRef.current)) {
+    if (!path.includes(fieldReferens.current)) {
       setFocus(false);
     }
   };
@@ -47,14 +47,14 @@ function Field({
     <div
       className={!focus ? className : `${className}__focus`}
       onFocus={() => handleFocusField(focus)}
-      ref={fieldRef}>
+      ref={fieldReferens}>
       <div className="icon">{icon}</div>
       <input
         type={type}
         name={name}
         id={id}
         placeholder={placeholder}
-        ref={ref}
+        ref={fieldRef}
         form={form}
         accept={accept}
       />

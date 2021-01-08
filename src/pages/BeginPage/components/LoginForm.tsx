@@ -43,7 +43,7 @@ function LoginForm() {
         placeholder="Username"
         className="field__primory"
         name="username"
-        ref={register}
+        fieldRef={register}
         icon={<PersonIcon />}
         form="login__form"
       />
@@ -52,7 +52,7 @@ function LoginForm() {
         placeholder="Password"
         className="field__primory"
         name="password"
-        ref={register}
+        fieldRef={register}
         icon={<VpnKeyIcon />}
         form="login__form"
       />
