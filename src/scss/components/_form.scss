@@ -1,0 +1,16 @@
+.form__primory {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  button {
+    align-self: center;
+  }
+  div {
+    margin-top: 5px;
+  }
+  a {
+    margin-top: 10px;
+    align-self: center;
+  }
+}

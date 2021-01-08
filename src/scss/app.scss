@@ -1,7 +1,8 @@
 //setting
 @import './base/normalize', './base/theme';
 //components
-@import './components/button', './components/button', './components/modal';
+@import './components/button', './components/button', './components/modal', './components/field',
+  './components/form';
 //pages
 @import './pages/beginPage';
 .app {

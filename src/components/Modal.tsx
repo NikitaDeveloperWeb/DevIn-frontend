@@ -11,30 +11,32 @@ interface ModalProps {
 }
 
 function Modal({ children, valueButton, typeButton, formButton, classNameButton }: ModalProps) {
+  //state modal window
   const [open, setOpen] = React.useState(false);
+  //refirens modal window
   const modalRef = React.useRef<HTMLDivElement>(null);
-  const modalButtonRef = React.useRef<HTMLSpanElement>(null);
+  //close modal window
   const handleClose = () => {
     setOpen(false);
   };
-
+  //open modal window
   const handleOpen = () => {
     setOpen(true);
   };
-
+  //outside click listener
   const handleOutsideClick = (event: any) => {
     const path = event.path || (event.composedPath && event.composedPath());
     if (!path.includes(modalRef.current)) {
       handleClose();
-      console.log('Outside click');
     }
   };
   React.useEffect(() => {
     document.querySelector('.modal__open')?.addEventListener('click', handleOutsideClick);
   });
+
   return (
     <div>
-      <span onClick={() => handleOpen()} className="modal__button" ref={modalButtonRef}>
+      <span onClick={() => handleOpen()} className="modal__button">
         <Button
           value={valueButton}
           type={typeButton}
