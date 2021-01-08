@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface ButtonProps {
-  value: string;
+  value: string | undefined;
   type: 'button' | 'submit' | 'reset' | undefined;
   form?: string;
   className?: 'button__primary';
