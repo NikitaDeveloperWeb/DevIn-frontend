@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 
 //pages
 import BeginPage from './pages/BeginPage';
+import Home from './pages/Home';
 import MainPage from './pages/MainPage';
 
 function App() {
@@ -13,7 +14,9 @@ function App() {
     <div className="app">
       <Switch>
         <Route exact path="/" component={BeginPage} />
-        <Route exact path="/main" component={MainPage} />
+        <Route exact path="/home">
+          <MainPage components={<Home />} />
+        </Route>
       </Switch>
     </div>
   );
