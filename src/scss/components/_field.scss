@@ -8,7 +8,7 @@
   input {
     border: none;
     margin-left: 5px;
-    width: 80%;
+    width: 90%;
     &:focus {
       outline: 0;
       outline-offset: 0;
@@ -30,7 +30,7 @@
   input {
     border: none;
     margin-left: 5px;
-    width: 80%;
+    width: 90%;
     color: var(--color-border-field-focus);
     &:focus {
       outline: 0;
@@ -40,12 +40,15 @@
       font-size: 0;
     }
   }
+  transition: 0.7s;
 }
 .field__primory__remember {
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 20px;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
   input {
     align-self: flex-end;
   }
@@ -53,6 +56,10 @@
     align-self: center;
     margin-left: 10px;
   }
+}
+.register_remembr {
+  height: 30px !important;
+  font-size: 15px;
 }
 .field__primory__remember__focus {
   display: flex;

@@ -3,9 +3,6 @@ import Modal from '../../components/Modal';
 import LoginForm from './components/LoginForm';
 import RegisterForm from './components/RegisterForm';
 
-//page title
-document.title = 'DevIn | Authorization';
-
 const BeginPage = () => {
   return (
     <div className="beginPage">
