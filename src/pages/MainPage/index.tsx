@@ -1,6 +1,6 @@
 import React from 'react';
-
 import Navigation from '../../components/Navigation';
+
 import NavigationAside from '../../components/NavigationAside';
 
 interface MainPageProps {
@@ -10,10 +10,14 @@ interface MainPageProps {
 function MainPage({ components }: MainPageProps) {
   return (
     <div className="main">
-      <Navigation />
+      <div className="main__header">
+        <Navigation />
+      </div>
       <div className="main__content">
-        <NavigationAside />
-        <main>{components}</main>
+        <div className="main__content__aside">
+          <NavigationAside />
+        </div>
+        <main>{components}</main>;
       </div>
     </div>
   );

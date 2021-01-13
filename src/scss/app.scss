@@ -2,9 +2,10 @@
 @import './base/normalize', './base/theme';
 //components
 @import './components/button', './components/button', './components/modal', './components/field',
-  './components/form', './components/stepper', './components/select';
+  './components/form', './components/stepper', './components/select', './components/navigation',
+  './components/navigationAside';
 //pages
-@import './pages/beginPage';
+@import './pages/beginPage', './pages/mainPage';
 .app {
   width: 100%;
   height: 100%;

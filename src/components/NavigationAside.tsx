@@ -1,7 +1,7 @@
 import React from 'react';
 
 function NavigationAside() {
-  return <div></div>;
+  return <div>Aside</div>;
 }
 
 export default NavigationAside;
