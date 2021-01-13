@@ -1,0 +1,17 @@
+{
+  "Users": [
+    {
+      "id": "1",
+      "username": "rusak",
+      "firstname": "Nikita",
+      "lastname": "Rusakov",
+      "email": "rusakdeveloper@gmail.com",
+      "phone": "89518054459",
+      "date": "24.02.2001",
+      "location": "Zlatoust",
+      "action": "developer",
+      "sex": "man",
+      "avatar": ""
+    }
+  ]
+}
