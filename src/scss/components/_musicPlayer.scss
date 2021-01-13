@@ -1,0 +1,30 @@
+@import '../base/theme';
+.music {
+  background: inherit;
+  &__content {
+    display: flex;
+    background: inherit;
+    audio {
+      background: inherit;
+      margin-left: 10px;
+    }
+    &__preview {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0px 5px 0px 5px;
+      // border: 1px solid var(--color-border-field);
+      border-radius: 5px;
+      cursor: pointer;
+      background: var(--color--music);
+      svg {
+        background: inherit;
+        path {
+          background: inherit;
+        }
+      }
+    }
+  }
+  &__playlist {
+  }
+}
