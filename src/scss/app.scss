@@ -3,7 +3,8 @@
 //components
 @import './components/button', './components/button', './components/modal', './components/field',
   './components/form', './components/stepper', './components/select', './components/navigation',
-  './components/navigationAside', './components/logo', './components/musicPlayer';
+  './components/navigationAside', './components/logo', './components/musicPlayer',
+  './components/userPreview', './components/card';
 //pages
 @import './pages/beginPage', './pages/mainPage';
 .app {

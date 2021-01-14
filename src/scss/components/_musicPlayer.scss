@@ -23,8 +23,39 @@
           background: inherit;
         }
       }
+      &:hover {
+        background: var(--color--music-hover);
+        svg {
+          background: inherit;
+          path {
+            background: inherit;
+            fill: var(--color-button-primary-hover);
+          }
+        }
+      }
     }
   }
   &__playlist {
+    display: none;
+  }
+  &__playlist__open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    overflow-y: scroll;
+    width: 40%;
+    height: 500px;
+    border-radius: 10px;
+    margin-top: 5px;
+    background: var(--color--music);
+    border: 1px solid var(--color-bg);
+    padding: 5px;
+    h2 {
+      background: inherit;
+      text-align: center;
+    }
+    &__carts {
+      background: inherit;
+    }
   }
 }
