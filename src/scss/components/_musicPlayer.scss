@@ -57,5 +57,17 @@
     &__carts {
       background: inherit;
     }
+    &__search {
+      background: inherit;
+      form {
+        background: inherit;
+        div {
+          background: inherit;
+          input {
+            background: inherit;
+          }
+        }
+      }
+    }
   }
 }

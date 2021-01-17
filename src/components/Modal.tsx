@@ -7,7 +7,7 @@ interface ModalProps {
   valueButton?: string;
   typeButton?: 'button' | 'submit' | 'reset' | undefined;
   formButton?: string;
-  classNameButton?: 'button__primary';
+  classNameButton?: 'button__primary' | 'button__outline';
 }
 
 function Modal({ children, valueButton, typeButton, formButton, classNameButton }: ModalProps) {

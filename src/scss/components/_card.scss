@@ -53,6 +53,9 @@
             li {
               width: 100%;
               background: inherit;
+              div {
+                background: inherit;
+              }
               &:nth-child(2) {
                 color: var(--color-button-primary);
               }

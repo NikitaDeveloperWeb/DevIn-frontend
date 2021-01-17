@@ -1,0 +1,14 @@
+@import '../base/theme';
+.confirm {
+  z-index: 1000;
+  background: var(--color--music);
+  &__buttons {
+    background: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    button {
+      margin-top: 5px;
+    }
+  }
+}

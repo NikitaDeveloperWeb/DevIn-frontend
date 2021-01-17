@@ -1,5 +1,7 @@
 import React from 'react';
 import music from '../../../assets/img/music.jpg';
+import Modal from '../../Modal';
+import Confirm from './Confirm';
 
 interface MusicCardProps {
   title: string;
@@ -48,7 +50,14 @@ function MusicCard({ title, author, source, cover }: MusicCardProps) {
               }>
               <ul>
                 <li>Play</li>
-                <li>Remove track</li>
+                <li>
+                  <Modal
+                    children={Confirm()}
+                    valueButton="Remove this track"
+                    typeButton="button"
+                    classNameButton="button__outline"
+                  />
+                </li>
               </ul>
             </div>
           </div>
