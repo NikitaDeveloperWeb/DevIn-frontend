@@ -30,7 +30,7 @@ function MusicPlayer() {
   };
   React.useEffect(() => {
     document.body?.addEventListener('click', handleOutsideClick);
-  });
+  }, []);
 
   const { register, handleSubmit } = useForm<SearchProps>({
     resolver: yupResolver(SearchFormSchema),

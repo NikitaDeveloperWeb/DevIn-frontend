@@ -22,6 +22,7 @@ function MusicCard({ title, author, source, cover }: MusicCardProps) {
     setOpen(true);
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const handleOutsideClick = (event: any) => {
     const path = event.path || (event.composedPath && event.composedPath());
     if (!path.includes(optionRef.current)) {
@@ -30,7 +31,7 @@ function MusicCard({ title, author, source, cover }: MusicCardProps) {
   };
   React.useEffect(() => {
     document.body?.addEventListener('click', handleOutsideClick);
-  });
+  }, [handleOutsideClick]);
 
   return (
     <div className="card">

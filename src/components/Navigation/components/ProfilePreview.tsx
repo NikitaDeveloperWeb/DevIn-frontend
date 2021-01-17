@@ -22,7 +22,7 @@ function ProfilePreview({ firstname, lastname, avatar }: ProfilePreviewProps) {
   };
   React.useEffect(() => {
     document.body?.addEventListener('click', handleOutsideClick);
-  });
+  }, []);
 
   return (
     <div className="userPreview" onClick={() => setOpen(!open)} ref={userRef}>

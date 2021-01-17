@@ -168,6 +168,7 @@ function RegisterForm() {
               option={['Designer', 'Developer']}
               icon={<WorkIcon />}
               className="select__primory"
+              id="action_sel"
             />
             <Select
               name="sex"
@@ -175,6 +176,7 @@ function RegisterForm() {
               option={['Man', 'Woman']}
               icon={<WcIcon />}
               className="select__primory"
+              id="sex_sel"
             />
             <Field
               type="password"
