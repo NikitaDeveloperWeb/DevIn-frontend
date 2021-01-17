@@ -1,6 +1,6 @@
 import React from 'react';
 import noavatar from '../../../assets/img/Noavatar.png';
-
+import { Link } from 'react-router-dom';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 
@@ -37,9 +37,15 @@ function ProfilePreview({ firstname, lastname, avatar }: ProfilePreviewProps) {
       </div>
       <div className={open ? 'menu__open' : 'menu'}>
         <ul>
-          <li>Edit Profile</li>
-          <li>Settings</li>
-          <li>Logout</li>
+          <li>
+            <Link to="/edit">Edit Profile</Link>
+          </li>
+          <li>
+            <Link to="/setting">Settings</Link>
+          </li>
+          <li>
+            <Link to="/">Logout</Link>
+          </li>
         </ul>
       </div>
     </div>

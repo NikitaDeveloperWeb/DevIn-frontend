@@ -70,6 +70,10 @@
     li {
       background: inherit;
       width: 100%;
+      a {
+        background: inherit;
+        width: 100%;
+      }
       &:hover {
         background: var(--color--music);
         transition: 1s;
