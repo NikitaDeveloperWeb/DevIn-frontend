@@ -6,13 +6,12 @@ interface AsideLinkProps {
   value?: string;
   path: string;
   active?: number;
+  index: number;
 }
 
-function AsideLink({ icon, value, path, active }: AsideLinkProps) {
-  const [activeItem, setActiveItem] = React.useState(0);
-
+function AsideLink({ icon, value, path, active, index }: AsideLinkProps) {
   return (
-    <div className={activeItem === active ? 'aside__link_active' : 'aside__link'}>
+    <div className={index === active ? 'aside__link_active' : 'aside__link'}>
       <div className="aside__link__a">
         <Link to={path}>
           <div className="icon">{icon}</div>

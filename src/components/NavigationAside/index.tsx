@@ -11,31 +11,56 @@ import CloudIcon from '@material-ui/icons/Cloud';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import BookmarkIcon from '@material-ui/icons/Bookmark';
 import SettingsApplicationsIcon from '@material-ui/icons/SettingsApplications';
-function NavigationAside() {
+
+interface NavidationAsideProps {
+  index: number;
+}
+
+function NavigationAside({ index }: NavidationAsideProps) {
   return (
-    <div className="navigationAside">
-      <AsideLink path="/home" value="My page" icon={<HomeIcon />} active={0} />
-      <AsideLink path="/news" value="News" icon={<CloudIcon />} active={1} />
-      <AsideLink path="/follows" value="People" icon={<GroupIcon />} active={2} />
-      <AsideLink path="/messager" value="Messager" icon={<MessageIcon />} active={3} />
-      <AsideLink path="/photos" value="Photos" icon={<PhotoIcon />} active={4} />
-      <AsideLink path="/video" value="Video" icon={<VideocamIcon />} active={5} />
-      <AsideLink path="/publics" value="Publics" icon={<PublicIcon />} active={6} />
-      <AsideLink path="/store" value="Store" icon={<LocalGroceryStoreIcon />} active={7} />
+    <aside className="navigationAside">
+      <AsideLink path="/home" value="My page" icon={<HomeIcon />} active={0} index={index} />
+      <AsideLink path="/news" value="News" icon={<CloudIcon />} active={1} index={index} />
+      <AsideLink path="/people" value="People" icon={<GroupIcon />} active={2} index={index} />
+      <AsideLink
+        path="/messager"
+        value="Messager"
+        icon={<MessageIcon />}
+        active={3}
+        index={index}
+      />
+      <AsideLink path="/photos" value="Photos" icon={<PhotoIcon />} active={4} index={index} />
+      <AsideLink path="/video" value="Video" icon={<VideocamIcon />} active={5} index={index} />
+      <AsideLink path="/publics" value="Publics" icon={<PublicIcon />} active={6} index={index} />
+      <AsideLink
+        path="/store"
+        value="Store"
+        icon={<LocalGroceryStoreIcon />}
+        active={7}
+        index={index}
+      />
       <AsideLink
         path="/notification"
         value="Notification"
         icon={<NotificationsIcon />}
         active={8}
+        index={index}
       />
-      <AsideLink path="/bookmarks" value="Bookmarks" icon={<BookmarkIcon />} active={9} />
       <AsideLink
-        path="/servises"
+        path="/bookmarks"
+        value="Bookmarks"
+        icon={<BookmarkIcon />}
+        active={9}
+        index={index}
+      />
+      <AsideLink
+        path="/services"
         value="Services"
         icon={<SettingsApplicationsIcon />}
         active={10}
+        index={index}
       />
-    </div>
+    </aside>
   );
 }
 

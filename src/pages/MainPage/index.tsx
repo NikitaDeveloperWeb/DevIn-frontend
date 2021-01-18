@@ -5,9 +5,10 @@ import NavigationAside from '../../components/NavigationAside';
 
 interface MainPageProps {
   components: JSX.Element | Element | JSX.Element[] | Element[];
+  index: number;
 }
 
-function MainPage({ components }: MainPageProps) {
+function MainPage({ components, index }: MainPageProps) {
   return (
     <div className="main">
       <div className="main__header">
@@ -15,7 +16,7 @@ function MainPage({ components }: MainPageProps) {
       </div>
       <div className="main__content">
         <div className="main__content__aside">
-          <NavigationAside />
+          <NavigationAside index={index} />
         </div>
         <main>{components}</main>;
       </div>
