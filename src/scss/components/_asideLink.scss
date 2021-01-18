@@ -1,0 +1,79 @@
+@import '../base/theme';
+.aside__link {
+  display: flex;
+  width: 100%;
+  margin-top: 12px;
+  position: relative;
+  align-items: center;
+  background: inherit;
+  padding: 2px;
+  border-radius: 5px;
+  &__a {
+    background: inherit;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    a {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      background: inherit;
+      .icon {
+        display: flex;
+        align-items: center;
+        background-color: inherit;
+        position: relative;
+        svg {
+          background: inherit;
+        }
+      }
+      p {
+        background: inherit;
+        position: relative;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+.aside__link_active {
+  display: flex;
+  width: 100%;
+  margin-top: 12px;
+  position: relative;
+  align-items: center;
+  background: var(--color--music);
+  padding: 2px;
+  border-radius: 5px;
+  &__a {
+    background: inherit;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    a {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      background: inherit;
+      .icon {
+        display: flex;
+        align-items: center;
+        background-color: inherit;
+        position: relative;
+        svg {
+          background: inherit;
+          fill: var(--color-border-field-focus);
+        }
+      }
+      p {
+        background: inherit;
+        position: relative;
+        margin-left: 10px;
+        color: var(--color-border-field-focus);
+      }
+    }
+  }
+}

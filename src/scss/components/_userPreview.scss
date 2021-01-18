@@ -79,7 +79,9 @@
         transition: 1s;
       }
       &:nth-child(3) {
-        color: var(--color-button-primary-hover);
+        a {
+          color: var(--color-button-primary-hover);
+        }
       }
     }
   }
