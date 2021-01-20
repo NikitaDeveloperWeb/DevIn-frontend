@@ -4,9 +4,10 @@
 @import './components/button', './components/button', './components/modal', './components/field',
   './components/form', './components/stepper', './components/select', './components/navigation',
   './components/navigationAside', './components/logo', './components/musicPlayer',
-  './components/userPreview', './components/card', './components/confirm', './components/asideLink';
+  './components/userPreview', './components/card', './components/confirm', './components/asideLink',
+  './components/ProfileHomePreview';
 //pages
-@import './pages/beginPage', './pages/mainPage';
+@import './pages/beginPage', './pages/mainPage', './pages/home';
 .app {
   width: 100%;
   height: 100%;

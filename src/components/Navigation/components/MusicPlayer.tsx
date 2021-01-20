@@ -1,13 +1,16 @@
 import React from 'react';
-import MusicNoteIcon from '@material-ui/icons/MusicNote';
-import MusicCard from './MusicCard';
-import music from '../../../assets/img/cristmas.jpg';
-import Field from '../../Field';
-import SearchIcon from '@material-ui/icons/Search';
-import Form from '../../Form';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import MusicCard from './MusicCard';
+//components
+import Form from '../../Form';
+import Field from '../../Field';
+//icons
+import MusicNoteIcon from '@material-ui/icons/MusicNote';
+import SearchIcon from '@material-ui/icons/Search';
+//img
+import music from '../../../assets/img/cristmas.jpg';
 
 const SearchFormSchema = yup.object().shape({
   search_music: yup.string().required('Enter your username'),

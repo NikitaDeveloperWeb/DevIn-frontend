@@ -18,7 +18,7 @@ function MainPage({ components, index }: MainPageProps) {
         <div className="main__content__aside">
           <NavigationAside index={index} />
         </div>
-        <main>{components}</main>;
+        <main>{components}</main>
       </div>
     </div>
   );

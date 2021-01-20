@@ -46,7 +46,7 @@
   background: var(--color--music);
   padding: 2px;
   border-radius: 5px;
-  &__a {
+  .aside__link__a {
     background: inherit;
     display: flex;
     height: 100%;
@@ -72,6 +72,7 @@
         background: inherit;
         position: relative;
         margin-left: 10px;
+        font-weight: 900;
         color: var(--color-border-field-focus);
       }
     }

@@ -1,0 +1,114 @@
+@import '../base/theme';
+.ProfileHomePreview {
+  width: 80%;
+  height: 0 auto;
+  background: var(--color-container-bg);
+  border-radius: 10px;
+  box-shadow: 0 1px 2px var(--color-shadow), 0 1px 1px var(--color-shadow-second);
+  align-self: center;
+  padding: 10px;
+  &__user {
+    background: inherit;
+    display: flex;
+    flex-direction: column;
+    &__major {
+      background: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__avatar {
+        display: flex;
+        align-items: center;
+        background: inherit;
+        min-width: 250px;
+        min-height: 250px;
+        max-width: 350px;
+        max-height: 350px;
+        border-radius: 50px;
+        img {
+          min-width: 250px;
+          min-height: 250px;
+          max-width: 350px;
+          max-height: 350px;
+          border-radius: 100px;
+        }
+      }
+      &__data {
+        position: relative;
+        margin-left: 20px;
+        background: inherit;
+        h3 {
+          background: inherit;
+          font-size: 40px;
+        }
+        p {
+          font-size: 20px;
+          font-weight: 500;
+          color: var(--color-font);
+          background: inherit;
+        }
+        &__methods {
+          background: inherit;
+          svg {
+            background: inherit;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            position: relative;
+            margin-left: 10px;
+            margin-top: 10px;
+            &:hover {
+              fill: var(--color-border-field-focus);
+            }
+          }
+        }
+      }
+    }
+    &__full {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background: inherit;
+      border-top: 1px solid var(--color--music);
+      margin-top: 10px;
+      h3 {
+        background: inherit;
+        font-size: 30px;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--color-font);
+        background: inherit;
+      }
+    }
+    &__full__none {
+      display: none;
+    }
+    button {
+      border: none;
+      background: inherit;
+      cursor: pointer;
+      border-radius: 100px;
+      padding: 10px;
+      svg {
+        width: 40px;
+        height: 40px;
+
+        border-radius: 100px;
+        background: inherit;
+        &:hover {
+          fill: var(--color-border-field-focus);
+          background: var(--color--music);
+        }
+      }
+      &:focus {
+        outline: 0;
+        outline-offset: 0;
+      }
+    }
+  }
+}

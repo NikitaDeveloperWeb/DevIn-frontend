@@ -14,11 +14,16 @@
   &__content {
     display: flex;
     width: 100%;
+
     &__aside {
-      width: 10%;
+      flex: 10%;
     }
     main {
+      right: 0;
+      padding: 5px;
+      margin-top: 10px;
       width: 90%;
+      // position: relative;
     }
   }
 }

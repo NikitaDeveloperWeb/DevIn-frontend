@@ -3,7 +3,7 @@
   min-width: 175px;
   max-width: 180px;
   height: 0 auto;
-  margin-top: 20px;
+  margin-top: 10px;
   background-color: var(--color-container-bg);
   border-radius: 10px;
   display: flex;
@@ -11,4 +11,56 @@
   box-shadow: 0 1px 2px var(--color-shadow), 0 1px 1px var(--color-shadow-second);
   position: relative;
   padding: 10px;
+}
+.navigationAside_close {
+  display: none;
+}
+
+.navigationAside__button {
+  position: relative;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-bg);
+  padding: 5px;
+  width: 180px;
+  height: 0 auto;
+  background: var(--color-container-bg);
+  box-shadow: 0 1px 2px var(--color-shadow), 0 1px 1px var(--color-shadow-second);
+  cursor: pointer;
+  svg {
+    background: inherit;
+  }
+  &:hover {
+    background: var(--color--music);
+    svg {
+      fill: var(--color-border-field-focus);
+    }
+  }
+}
+.navigationAside__button__close {
+  box-shadow: 0 1px 2px var(--color-shadow), 0 1px 1px var(--color-shadow-second);
+  position: relative;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-bg);
+  padding: 5px;
+  width: 40px;
+  height: 0 auto;
+  background: var(--color-container-bg);
+  cursor: pointer;
+  svg {
+    background: inherit;
+  }
+  &:hover {
+    background: var(--color--music);
+    svg {
+      fill: var(--color-border-field-focus);
+    }
+  }
 }
